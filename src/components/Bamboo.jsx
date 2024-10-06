@@ -17,7 +17,7 @@ function Bamboo() {
         <Button onClick={handleOpen}>Back this project</Button>
         <div className={`${styles.bookmarkDesktop} ${isBookmarked ? styles.bookmarked : ''}`} onClick={() => setIsBookmarked(v => !v)}>
         <img src={isBookmarked ? "./images/icon-bookmark-green.svg" : './images/icon-bookmark.svg'} alt="" />
-        {isMobile ? '' : <p>Bookmark</p>}
+        {isMobile ? '': <p>Bookmark</p>}
         </div>
       </div>
     </section>
