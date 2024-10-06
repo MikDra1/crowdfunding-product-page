@@ -1,0 +1,103 @@
+.statistics {
+    width: 90%;
+    margin-inline: auto;
+    background-color: #fff;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, .075), -1px -1px 0px rgba(0, 0, 0, .075);
+    padding-block: 1.5rem;
+    border-radius: .5rem;
+    max-width: 45rem;
+}
+
+.statistics > div {
+    display: grid;
+    gap: 1rem;
+}
+
+.statistics div p {
+    color: var(--Dark-gray);
+}
+
+.statistics div h2 {
+    font-size: 2rem;
+    margin-bottom: .3rem;
+    margin-top: 1rem;
+}
+
+.statistics div div{
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.borderBottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 27.5%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6e6e6;
+}
+
+.statistics progress {
+    background-color: #F4F4F4;
+    -webkit-appearance: none;
+    appearance: none;
+    accent-color: var(--Moderate-cyan);
+    height: .875rem;
+    border-radius: 100vw;
+    border: none;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.statistics progress::-webkit-progress-bar {
+    background-color: #F4F4F4;
+    border-radius: 100vw;
+}
+
+.statistics progress::-webkit-progress-value {
+    background-color: var(--Moderate-cyan);
+    border-radius: 100vw;
+}
+
+.statistics progress::-moz-progress-bar {
+    background-color: var(--Moderate-cyan);
+    border-radius: 100vw;
+}
+
+@media (min-width: 37.5em) {
+    .statistics {
+        text-align: start;
+        padding-bottom: 2rem;
+    }
+    .statistics > div  {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin-inline: auto;
+        gap: 3rem;
+    }
+
+    .borderBottom::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1px;
+        height: 80%;
+        left: auto;
+        transform: translateY(-50%);
+        background-color: #e6e6e6;
+        bottom: auto;
+    }
+
+    .statistics div div {
+        padding-right: 2.8rem;
+    }
+
+ 
+}

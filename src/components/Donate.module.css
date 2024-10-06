@@ -1,0 +1,31 @@
+.donate {
+  width: 90%;
+  margin-inline: auto;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.075),
+    -1px -1px 0px rgba(0, 0, 0, 0.075);
+  margin-top: 2.5rem;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  max-width: 45rem;
+}
+
+.donate h2 {
+  margin-bottom: 2rem;
+}
+
+.donate p {
+  color: var(--Dark-gray);
+}
+
+.donateBlocks {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 37.5em) {
+  .donate {
+    padding: 3rem;
+  }
+}

@@ -1,0 +1,19 @@
+.hero {
+    background-image: url('./images/image-hero-mobile.jpg');
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 46.25em) {
+    .hero {
+        background-image: linear-gradient(rgb(0, 0, 0, .3), transparent), url('./images/image-hero-desktop.jpg');
+        background-size: contain;
+    }
+}
+
+@media (min-width:100em  ) {
+    .hero {
+       background-size: cover;
+    }
+}

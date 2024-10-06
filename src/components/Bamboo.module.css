@@ -1,0 +1,83 @@
+.bamboo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 2.5rem;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 0.5rem;
+  padding: 0rem 0.75rem 2.5rem 0.75rem;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.075),
+    -1px -1px 0px rgba(0, 0, 0, 0.075);
+  max-width: 45rem;
+  margin-top: -8.8rem;
+}
+
+.bamboo h2 {
+  line-height: 1.1;
+}
+
+.bamboo p {
+  color: var(--Dark-gray);
+  margin-block: 1.5rem;
+  font-size: 0.938rem;
+}
+
+.bambooIcon {
+  transform: translateY(-50%);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bookmarkDesktop img {
+  transition: all 0.3s;
+  height: fit-content;
+  scale: 1.075;
+}
+
+.bookmarked p {
+  color: var(--Dark-cyan);
+  padding-bottom: 0;
+}
+
+.bookmarked img {
+  color: var(--Dark-cyan);
+}
+
+.bookmarked.bookmarked:hover img {
+  filter: none;
+}
+
+@media (min-width: 37.5em) {
+  .bookmarkDesktop {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 100vw;
+    padding-block: 0;
+    cursor: pointer;
+    height: min-content;
+  }
+
+  .bookmarkDesktop:hover img {
+    filter: brightness(180%) contrast(40%);
+    padding-block: 0;
+  }
+
+  .bookmarkDesktop p {
+    padding-inline: 1.25rem;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+  .buttons {
+    justify-content: space-between;
+    width: 90%;
+  }
+}

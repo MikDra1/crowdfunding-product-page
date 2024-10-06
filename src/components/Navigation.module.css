@@ -1,0 +1,118 @@
+.headerMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5%;
+  padding-block: 2rem;
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+}
+
+.headerMobileUl {
+  display: none;
+  position: fixed;
+  top: 12.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  list-style: none;
+  gap: 1rem;
+  padding-block: 1rem 1rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  box-shadow: 3rem 0rem 20rem black;
+}
+
+.headerMobileUl div:first-child {
+  padding-top: 1rem;
+}
+
+.headerMobileUl div:not(:last-child) {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.headerMobileUl div {
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.15rem;
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-left: 10%;
+}
+
+
+
+.headerMobileLoginDiv {
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+}
+
+.headerMobile img {
+  z-index: 3;
+}
+
+.mobileUlOpen.mobileUlOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.headerDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  margin-inline: auto;
+  max-width: 73.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 77%;
+}
+
+.headerDesktopFlex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.headerDesktopFlex div {
+  font-weight: 700;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.headerDesktopFlex div::after {
+  content: "";
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  width: 0;
+  transition: all 0.3s;
+}
+
+.headerDesktopFlex div:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.headerDesktopFlex > div {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 400;
+}
+
+.headerDesktopItem {
+  cursor: pointer;
+  transition: all 0.3s;
+}

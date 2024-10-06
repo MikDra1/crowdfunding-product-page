@@ -1,0 +1,100 @@
+.backThisProject {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 90%;
+  height: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 45rem;
+
+
+  z-index: 99999;
+}
+
+.backThisProjectContent {
+  background-color: #fff;
+  margin-inline: auto;
+  padding-block: 2rem;
+  border-radius: .8rem;
+
+}
+
+.radioButtonsContainer {
+  display: grid;
+  gap: 2rem;
+}
+
+.radioButtonsContainer input[type="radio"] {
+  display: none;
+}
+
+/* .radioButtonsContainer {
+} */
+
+.radioButtonsContainer label {
+  position: relative;
+  color: #01cc;
+  border-radius: 0.3rem;
+  padding: 0.75rem 0rem;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* .radioButtonsContainer label:hover {
+} */
+
+.radioButtonsContainer label::before {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid #ededed;
+  border-radius: 100vw;
+  margin-right: 0.75rem;
+}
+
+.radioButtonsContainer > div > section:has(input[type="radio"]:checked) {
+  border: 2px solid var(--Moderate-cyan);
+}
+
+/* .radioButtonsContainer input[type="radio"]:checked + label {
+} */
+
+.radioButtonsContainer input[type="radio"]:checked + label ~ div ~ div {
+  display: grid;
+}
+
+.radioButtonsContainer input[type="radio"]:checked + label::before {
+  outline: 4.6px solid white;
+  background-color: var(--Moderate-cyan);
+  outline-offset: -5px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.top {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.top p {
+  color: var(--Dark-gray);
+  margin-bottom: 1.25rem;
+  font-size: .938rem;
+}
+
+.top > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: .75rem;
+}
+
+.top div div {
+  cursor: pointer;
+}
